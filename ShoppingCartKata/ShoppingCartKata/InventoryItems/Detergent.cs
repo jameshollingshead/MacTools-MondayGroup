@@ -12,6 +12,8 @@ namespace ShoppingCartKata.InventoryItems
     {
         private const string name = "Detergent";
         private const double price = 3.00;
+        private const int numberForDiscount = 1;
+        private const double discountPrice = 3.00;
         public string GetName()
         {
             return name;
@@ -24,12 +26,12 @@ namespace ShoppingCartKata.InventoryItems
 
         public int GetNumberForDiscount()
         {
-            throw new NotImplementedException();
+            return numberForDiscount;
         }
 
         public double GetDiscountPrice()
         {
-            throw new NotImplementedException();
+            return discountPrice;
         }
     }
 }

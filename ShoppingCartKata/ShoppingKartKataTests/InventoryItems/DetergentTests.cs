@@ -33,6 +33,17 @@ namespace ShoppingCartKataTests.InventoryItems
             Assert.AreEqual(3.00, detergent.GetPrice(), delta);
         }
 
+        [Test]
+        public void GetNumberForDiscountReturns1()
+        {
+            Assert.AreEqual(1, detergent.GetNumberForDiscount());
+        }
+
+        [Test]
+        public void GetDiscountPriceReturns3Dollars()
+        {
+            Assert.AreEqual(3.00, detergent.GetDiscountPrice(), delta);
+        }
         
     }
 }
