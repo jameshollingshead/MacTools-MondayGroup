@@ -33,5 +33,16 @@ namespace ShoppingCartKataTests.InventoryItems
             Assert.AreEqual(1.00, soda.GetPrice(), delta);
         }
 
+        [Test]
+        public void GetNumberForDiscountReturns3()
+        {
+            Assert.AreEqual(3, soda.GetNumberForDiscount());
+        }
+
+        [Test]
+        public void GetDiscountPriceReturn2Dollars()
+        {
+            Assert.AreEqual(2.00, soda.GetDiscountPrice(), delta);
+        }
     }
 }
