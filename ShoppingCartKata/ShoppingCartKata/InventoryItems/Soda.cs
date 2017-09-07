@@ -8,15 +8,16 @@ namespace ShoppingCartKata.InventoryItems
 {
     public class Soda : IInventory
     {
-        
+        private const string name = "Soda";
+        private const double price = 1.00;
         public string GetName()
         {
-            throw new NotImplementedException();
+            return name;
         }
 
         public double GetPrice()
         {
-            throw new NotImplementedException();
+            return price;
         }
 
         public int GetNumberForDiscount()

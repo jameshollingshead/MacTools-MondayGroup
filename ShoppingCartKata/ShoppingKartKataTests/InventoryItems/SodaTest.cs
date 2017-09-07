@@ -21,7 +21,17 @@ namespace ShoppingCartKataTests.InventoryItems
             soda = new Soda();
         }
 
-        
+        [Test]
+        public void GetNameReturnsSoda()
+        {
+            Assert.AreEqual("Soda", soda.GetName());
+        }
+
+        [Test]
+        public void GetPriceReturns1Dollar()
+        {
+            Assert.AreEqual(1.00, soda.GetPrice(), delta);
+        }
 
     }
 }
