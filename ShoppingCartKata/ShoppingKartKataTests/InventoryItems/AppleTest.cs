@@ -33,5 +33,17 @@ namespace ShoppingCartKataTests.InventoryItems
         {
             Assert.AreEqual(0.50, apple.GetPrice(), delta);
         }
+
+        [Test]
+        public void GetNumberForDiscountReturns3()
+        {
+            Assert.AreEqual(3,apple.GetNumberForDiscount());
+        }
+
+        [Test]
+        public void GetDiscountedPriceReturns120()
+        {
+            Assert.AreEqual(1.20, apple.GetDiscountPrice(), delta);
+        }
     }
 }
