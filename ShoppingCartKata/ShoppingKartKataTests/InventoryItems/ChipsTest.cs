@@ -21,6 +21,29 @@ namespace ShoppingCartKataTests.InventoryItems
             chips = new Chips();
         }
 
+        [Test]
+        public void GetNameReturnsChips()
+        {
+            Assert.AreEqual("Chips", chips.GetName());
+        }
+
+        [Test]
+        public void GetPriceReturns75Cents()
+        {
+            Assert.AreEqual(0.75, chips.GetPrice(), delta);
+        }
+
+        [Test]
+        public void GetDiscountNumberReturns1()
+        {
+            Assert.AreEqual(1, chips.GetNumberForDiscount());
+        }
+
+        [Test]
+        public void DiscountPriceReturns75Cents()
+        {
+            Assert.AreEqual(0.75, chips.GetDiscountPrice(), delta);
+        }
         
     }
 }
