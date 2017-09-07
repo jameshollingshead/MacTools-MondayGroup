@@ -11,12 +11,12 @@ namespace ShoppingCartKata.InventoryItems
 
         public string GetName()
         {
-            throw new NotImplementedException();
+            return "Apple";
         }
 
         public double GetPrice()
         {
-            throw new NotImplementedException();
+            return 0.50;
         }
 
         public int GetNumberForDiscount()

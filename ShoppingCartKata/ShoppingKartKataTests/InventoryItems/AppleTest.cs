@@ -21,6 +21,17 @@ namespace ShoppingCartKataTests.InventoryItems
             apple = new Apple();
         }
 
+        [Test]
+        public void GetNameReturnsApple()
+        {
+            Assert.AreEqual("Apple", apple.GetName());
 
+        }
+
+        [Test]
+        public void GetPriceReturns50Cents()
+        {
+            Assert.AreEqual(0.50, apple.GetPrice(), delta);
+        }
     }
 }
